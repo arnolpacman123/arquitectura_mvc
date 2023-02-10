@@ -20,6 +20,8 @@
                    href="{{ route('categorias.listar') }}">Categorías</a>
                 <a class="flex-sm-fill text-sm-center nav-link text-white {{ request()->is('productos') ? 'active' : '' }}"
                    href="{{ route('productos.listar') }}">Productos</a>
+                <a class="flex-sm-fill text-sm-center nav-link text-white {{ request()->is('facturas') ? 'active' : '' }}"
+                   href="{{ route('facturas.listar') }}">Facturas</a>
             </nav>
         </div>
     </div>

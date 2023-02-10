@@ -14,6 +14,16 @@ class MProducto extends Model
     protected $guarded = [];
     public $timestamps = false;
 
+    public function categoria()
+    {
+        return $this->belongsTo(MCategoria::class, 'categoria_id');
+    }
+
+    public function detallesFacturas()
+    {
+        return $this->hasMany(MDetalleFactura::class, 'producto_id');
+    }
+
     public function listar()
     {
         return $this->all()->sortByDesc('id');

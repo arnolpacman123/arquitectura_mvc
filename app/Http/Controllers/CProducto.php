@@ -50,7 +50,7 @@ class CProducto extends Controller
         return redirect()->route('productos.listar');
     }
 
-    public function eliminar($id)
+    public function eliminar(int $id)
     {
         $this->mProducto->eliminar($id);
         return redirect()->route('productos.listar');

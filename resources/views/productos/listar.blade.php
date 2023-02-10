@@ -21,12 +21,14 @@
                    href="{{ route('categorias.listar') }}">Categorías</a>
                 <a class="flex-sm-fill text-sm-center nav-link text-white {{ request()->is('productos') ? 'active' : '' }}"
                    href="{{ route('productos.listar') }}">Productos</a>
+                <a class="flex-sm-fill text-sm-center nav-link text-white {{ request()->is('facturas') ? 'active' : '' }}"
+                   href="{{ route('facturas.listar') }}">Facturas</a>
             </nav>
         </div>
     </div>
 </header>
 
-<main role="main">
+<main>
     <section class="py-5 container">
         <div class="row">
             <div class="col-lg-8 col-md-8 mx-auto">
